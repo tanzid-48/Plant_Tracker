@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Tracker</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <header class=" w-[80%] mx-auto space-y-5">
+
+        <h1 class="text-6xl font-bold text-green-500">Plant Tracker</h1>
+        <div class=" grid grid-cols-3 gap-8 ">
+            <div class="bg-amber-200 p-4  rounded-md ">
+                <p>Total</p>
+                <p id="total">0</p>
+            </div>
+            <div class="bg-green-300 p-4 rounded-md">
+                <p>Thriving</p>
+                <p id="ThrivingCount">0</p>
+            </div>
+            <div class="bg-red-400 p-4 rounded-md">
+
+                <p>Struggling</p>
+                <p id="StrugglingCount">0</p>
+            </div>
+
+        </div>
+    </header>
+
+    <hr class="my-8">
+
+    <main class="w-[80%] mx-auto">
+        <div class=" flex gap-3 mb-7">
+            <button onclick="toggleStyle('all-filter-btn')" class="bg-black text-white px-6 py-2"
+                id="all-filter-btn">All</button>
+            <button onclick="toggleStyle('thriving-filter-btn')" class="bg-gray-300 px-6 py-2"
+                id="thriving-filter-btn">Thriving</button>
+            <button onclick="toggleStyle('struggling-filter-btn')" class="bg-gray-300 px-6 py-2"
+                id="struggling-filter-btn">Struggling</button>
+        </div>
+        <!-- filter section -->
+        <section id="filters-section" class="hidden">
+
+        </section>
+
+        <section id="allCards" class="space-y-7">
+            <div class="card flex  justify-between border p-8">
+
+                <div class="space-y-6">
+                    <p class="plant-name text-4xl">Plant name 1</p>
+                    <p class="latin-name">Latin Name</p>
+
+                    <div class="flex gap-5">
+                        <p class="light bg-gray-200 px-5">Bright Indicate</p>
+                        <p class="water  bg-gray-200 px-5">Weekly</p>
+                    </div>
+
+                    <p class="status">Not applicable</p>
+                    <p class="notes">New leaf unfurling by the east window</p>
+                    <div class="flex gap-5">
+                        <button class="thriving-btn bg-green-400 px-7 py-2">Thriving</button>
+                        <button class="struggling-btn bg-red-400 px-6 py-2">Struggling</button>
+                    </div>
+                </div>
+
+                <div class="">
+                    <button class="btn-delete bg-red-200 text-red-600 px-6 py-2">Delete</button>
+                </div>
+
+            </div>
+
+            <div class="card flex  justify-between border p-8">
+
+                <div class="space-y-6">
+                    <p class="plant-name text-4xl">Plant name 2</p>
+                    <p class="latin-name">Latin Name</p>
+
+                    <div class="flex gap-5">
+                        <p class="light bg-gray-200 px-5">Bright Indicate</p>
+                        <p class="water  bg-gray-200 px-5">Weekly</p>
+                    </div>
+
+                    <p class="status">Not applicable</p>
+                    <p class="notes">New leaf unfurling by the east window</p>
+                    <div class="flex gap-5">
+                        <button class="thriving-btn bg-green-400 px-7 py-2">Thriving</button>
+                        <button class="struggling-btn bg-red-400 px-6 py-2">Struggling</button>
+                    </div>
+                </div>
+
+                <div class="">
+                    <button class="btn-delete bg-red-200 text-red-600 px-6 py-2">Delete</button>
+                </div>
+
+            </div>
+
+            <div class="card flex  justify-between border p-8">
+
+                <div class="space-y-6">
+                    <p class="plant-name text-4xl">Plant name 3</p>
+                    <p class="latin-name">Latin Name</p>
+
+                    <div class="flex gap-5">
+                        <p class="light bg-gray-200 px-5">Bright Indicate</p>
+                        <p class="water  bg-gray-200 px-5">Weekly</p>
+                    </div>
+
+                    <p class="status">Not applicable</p>
+                    <p class="notes">New leaf unfurling by the east window</p>
+                    <div class="flex gap-5">
+                        <button class="thriving-btn bg-green-400 px-7 py-2">Thriving</button>
+                        <button class="struggling-btn bg-red-400 px-6 py-2">Struggling</button>
+                    </div>
+                </div>
+
+                <div class="">
+                    <button class="btn-delete bg-red-200 text-red-600 px-6 py-2">Delete</button>
+                </div>
+
+            </div>
+
+            <div class="card flex  justify-between border p-8">
+
+                <div class="space-y-6">
+                    <p class="plant-name text-4xl">Plant name 4</p>
+                    <p class="latin-name">Latin Name</p>
+
+                    <div class="flex gap-5">
+                        <p class="light bg-gray-200 px-5">Bright Indicate</p>
+                        <p class="water  bg-gray-200 px-5">Weekly</p>
+                    </div>
+
+                    <p class="status">Not applicable</p>
+                    <p class="notes">New leaf unfurling by the east window</p>
+                    <div class="flex gap-5">
+                        <button class="thriving-btn bg-green-400 px-7 py-2">Thriving</button>
+                        <button class="struggling-btn bg-red-400 px-6 py-2">Struggling</button>
+                    </div>
+                </div>
+
+                <div class="">
+                    <button class="btn-delete bg-red-200 text-red-600 px-6 py-2">Delete</button>
+                </div>
+
+            </div>
+        </section>
+
+
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>
